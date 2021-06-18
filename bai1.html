@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function SNT(number){
+        if(number<2){
+            return -1;
+        }
+        let SNTT= true;
+        for(i=2;i<number;i++){
+            if(number%i==0){
+                return SNTT= false;
+            }
+        }
+        return SNTT;
+    }
+    let n=2;
+    while(n<10000){
+        if(SNT(n)){
+            document.write(+n+ ";" )
+        }
+        n++;
+    }
+
+    </script>
+
+</body>
+</html>
